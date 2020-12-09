@@ -10,7 +10,7 @@
             <small>Written on {{$post->created_at}}</small>
             </div>
         @endforeach
-        {$posts->links('pagination::bootstrap-4')}    
+        {{$posts->links('pagination::bootstrap-4')}}    
         @else
         <p>No posts found</p>
     @endif
